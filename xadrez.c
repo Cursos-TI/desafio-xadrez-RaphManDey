@@ -12,7 +12,7 @@ int main() {
 
     // Movimento do Bispo: 5 casas na diagonal superior direita 
     printf("Movimento do Bispo:\n");
-    i = 0;
+
     while (i < movimentosBispo) {
         printf("Cima\n");
         printf("Direita\n");
@@ -28,7 +28,9 @@ int main() {
     }
 
     printf("\n");  // Espaço entre os blocos
-
+    
+    // Movimento da Rainha: 8 casas pra esquerda
+    
     printf("Movimento da Rainha:\n");
     i = 0;
     do {
@@ -36,9 +38,25 @@ int main() {
         i++;
     } while (i < movimentosRainha);
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    printf("\n");  // Espaço entre os blocos
+    
+    // Movimento do Cavalo: 2 casas para baixo e 1 casa pra esquerda
+    printf("Movimento do Cavalo:\n");
+
+    const int casasVerticais = 2;
+    const int casasHorizontais = 1;
+
+    // 2 casas para cima
+    for (i = 0; i < casasVerticais; i++) {
+        printf("Baixo\n");
+    }
+
+    // 1 casa para a esquerda
+    int j = 0;
+    while (j < casasHorizontais) {
+        printf("Esquerda\n");
+        j++;
+    }
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
